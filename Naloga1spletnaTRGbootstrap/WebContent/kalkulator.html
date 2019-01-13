@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mojster D.O.O. | Kalkulator</title>
+<!-- <link rel="stylesheet" type="text/css" href="CSS/style.css">-->
+<script src="JS/script.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Mojster D.O.O.!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Prva stran</a></li>
+					<li><a href="podatki.html">Podatki o trgovini</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Kategorije izdelkov<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="dodatki.html">Dodatki za mobilne naprave</a></li>
+							<li><a href="#">Mobilni telefoni</a></li>
+							<li><a href="#">Računalniki</a></li>
+							<li><a href="#">Računalniške komponente</a></li>
+						</ul></li>
+					<li><a href="#">Kolekcija najbolje prodajanih izdelkov</a></li>
+					<li class="dropdown active"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Akcijske ponudbe<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="akcijske.html">Naročniški paketi</a></li>
+							<li><a href="ugibanje.html">Ugibanje števil</a></li>
+							<li class="active"><a href="kalkulator.html">Kalkulator</a></li>
+						</ul></li>
+				</ul>
+				<p id="uraInDatum" class="navbar-text navbar-right"
+					style="margin-right: 0px;"></p>
+			</div>
+		</div>
+	</nav>
+	<script>
+		window.onload = date_time('uraInDatum');
+	</script>
+	<div class="container-fluid">
+		<div class="row">
+			<div
+				class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 col-md-offset-4">
+				<h2 class="trenutna">Kalkulator</h2>
+
+				<p>Ti kalkulatorji vam bodo v pomoč pri raznoraznih izračunih
+					cen.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div
+				class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 col-md-offset-4">
+				<fieldset class="calc">
+					<legend>Kalkulator za izračun cene z DDV</legend>
+					<label for="cena">Cena</label> <input type="text" id="cena"
+						value="" /> <label for="ddv">DDV</label> <input type="text"
+						id="DDV" value="" /> <input type="button" onclick="ddv()"
+						value="izračunaj" /><br />
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row">
+			<div
+				class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 col-md-offset-4">
+				<fieldset class="calc">
+					<legend>Kalkulator za izračun cene brez DDV</legend>
+					<label for="cena">Cena</label> <input type="text" id="cena1"
+						value="" /> <label for="ddv">DDV</label> <input type="text"
+						id="DDV1" value="" /> <input type="button" onclick="addv()"
+						value="izračunaj" /><br />
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row">
+			<div
+				class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 col-md-offset-4">
+				<fieldset class="calc">
+					<legend>Kalkulator za izračun cene s popustom</legend>
+					<label for="cena">Cena</label> <input type="text" id="cena2"
+						value="" /> <label for="ddv">Popust</label> <input type="text"
+						id="popust" value="" /> <input type="button" onclick="popust()"
+						value="izračunaj" /><br />
+				</fieldset>
+			</div>
+		</div>
+
+		<div class="row">
+			<div
+				class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 col-md-offset-4">
+				<fieldset class="calc">
+					<legend>Kalkulator za izračun cene pri nakupu na obroke</legend>
+					<label for="cena">Cena</label> <input type="text" id="cena3"
+						value="" /> <label for="obrok">Obrok</label> <input type="text"
+						id="obrok" value="" /> <input type="button" onclick="obrok()"
+						value="izračunaj" /><br />
+				</fieldset>
+			</div>
+		</div>
+
+		<br>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+				<p align="center">
+					Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster
+					D.O.O. Vse pravice pridržane
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

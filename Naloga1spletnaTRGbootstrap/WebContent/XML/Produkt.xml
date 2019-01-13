@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Produkt.xsl"?>
+<seznamProduktov xmlns="mojaTrgovina.com"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="mojaTrgovina.com shema.xsd">
+	<produkt id="p1">
+		<naziv>Apple AirPods</naziv>
+		<opis>Brezžične slušalke znamke Apple</opis>
+		<cena>189,00 €</cena>
+		<zaloga>Da</zaloga>
+	</produkt>
+	<produkt id="p2">
+		<naziv>Beats Solo3 Wireless</naziv>
+		<opis>Brezžične slušalke znamke Beats</opis>
+		<cena>299,00 €</cena>
+		<zaloga>Da</zaloga>
+	</produkt>
+	<produkt id="p3">
+		<naziv>Snap Spectacles</naziv>
+		<opis>Pametna očala znamke Snap</opis>
+		<cena>123,50 €</cena>
+		<zaloga>Da</zaloga>
+	</produkt>
+	<produkt id="p4">
+		<naziv>Marshall Kilburn</naziv>
+		<opis>Prenosni zvočnik znamke Marshall</opis>
+		<cena>269,00 €</cena>
+		<zaloga>Ne</zaloga>
+	</produkt>
+	<produkt id="p5">
+		<naziv>Beats Pill+</naziv>
+		<opis>Prenosni zvočnik znamke Beats</opis>
+		<cena>227,99 €</cena>
+		<zaloga>Ne</zaloga>
+	</produkt>
+</seznamProduktov>

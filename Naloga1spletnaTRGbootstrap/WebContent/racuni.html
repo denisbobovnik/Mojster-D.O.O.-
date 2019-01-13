@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mojster D.O.O. | Računi</title>
+<!-- <link rel="stylesheet" type="text/css" href="CSS/style.css">-->
+<script src="JS/script.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Mojster D.O.O.!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Prva stran</a></li>
+					<li><a href="podatki.html">Podatki o trgovini</a></li>
+					<li class="dropdown active"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Kategorije izdelkov<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="dodatki.html">Dodatki za mobilne naprave</a></li>
+							<li><a href="#">Mobilni telefoni</a></li>
+							<li><a href="#">Računalniki</a></li>
+							<li><a href="#">Računalniške komponente</a></li>
+						</ul></li>
+					<li><a href="#">Kolekcija najbolje prodajanih izdelkov</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Akcijske ponudbe<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="akcijske.html">Naročniški paketi</a></li>
+							<li><a href="ugibanje.html">Ugibanje števil</a></li>
+							<li><a href="kalkulator.html">Kalkulator</a></li>
+						</ul></li>
+				</ul>
+				<p id="uraInDatum" class="navbar-text navbar-right"
+					style="margin-right: 0px;"></p>
+			</div>
+		</div>
+	</nav>
+	<script>
+		window.onload = date_time('uraInDatum');
+	</script>
+	<div class="container-fluid">
+		<div class="row">
+			<div
+				class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-5 col-lg-offset-5 col-md-offset-5">
+				<div class="dropdown">
+					<button class="btn btn-primary dropdown-toggle" type="button"
+						data-toggle="dropdown">
+						Izberi račun <span class="caret"></span>
+					</button>
+					<ul class="dropdown-menu">
+						<li><a href="racuni.html">Račun_2017-03-04</a></li>
+						<li><a href="#">Račun_2017-03-03</a></li>
+						<li><a href="#">Račun_2017-03-02</a></li>
+						<li><a href="#">Račun_2017-03-01</a></li>
+					</ul>
+				</div>
+				<h2>Račun_2017-03-04</h2>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-md-offset-3">
+				<table class="table table-bordered">
+					<tr>
+						<td>
+							<table>
+								<tr>
+									<td colspan="2">
+										<div>
+											<div>
+												<h1>Mojster D.O.O.</h1>
+											</div>
+											<div>
+												<table>
+													<tr>
+														<td><img width="80px" height="80px"
+															src="Slike/webstore-300x300.png"></td>
+														<td>
+															<table>
+																<tr>
+																	<td>
+																		<ul>
+																			<li>Varno</li>
+																			<li>Zanesljivo</li>
+																			<li>Hitro</li>
+																		</ul>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<p>
+											<strong>Pozdravljeni Janez Novak</strong>, <br>Zahvaljujemo
+											se vam za vaše naročilo v naši trgovini Mojster D.O.O.. Če
+											imate vprašanje o vašem naročilu nas prosim kontaktirajte na
+											e-mail <a
+												href="mailto:info@mojsterdoo.si?Subject=Vprašanje%20o%20naročilu"
+												target="_top">info@mojsterdoo.si</a> ali pa nas pokličite na
+											telefon 070 399 597. Račun vašega naročila si lahko ogledate
+											in natisnete spodaj. Še enkrat se vam zahvaljujemo za vaše
+											naročilo.
+										</p>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">Naročilo številka #100001649 (naročeno 4.
+										marec 2017)
+										<hr>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td height="23px"><strong>Naročnik:</strong></td>
+											</tr>
+											<tr>
+												<td>Janez Novak<br> Smetanova ulica 17<br>
+													Maribor, 2000<br> Slovenija<br> T: 070999775
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table>
+											<tr>
+												<td height="23px"><strong>Način plačila:</strong></td>
+											</tr>
+											<tr>
+												<td valign="top">Plačilo po povzetju</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<table>
+											<tr>
+												<td height="23px"><strong>Naslov prejemnika:</strong></td>
+											</tr>
+											<tr>
+												<td>Janez Novak<br> Smetanova ulica 17<br>
+													Maribor, 2000<br> Slovenija<br> T: 070999775
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table>
+											<tr>
+												<td height="23px"><strong>Način pošiljanja:</strong></td>
+											</tr>
+											<tr>
+												<td valign="top">Cena dostave po dogovoru - Cena po
+													dogovoru + Plačilo po povzetju</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2">
+										<table>
+											<tr height="23px">
+												<td width="25%"><strong>Artikel</strong></td>
+												<td width="25%"><strong>Sku.</strong></td>
+												<td width="25%" align="right"><strong>Količina</strong></td>
+												<td width="25%" align="right"><strong>Znesek
+														skupaj</strong></td>
+											</tr>
+											<tr>
+												<td valign="top"><strong>Apple AirPods</strong></td>
+												<td valign="top">edi0231</td>
+												<td valign="top" align="right">1<br> Znesek skupaj<br>
+													Dostava
+												</td>
+												<td align="right" valign="top">189,00 €<br> 189,00
+													€<br> 0,00 €
+												</td>
+											</tr>
+											<tr height="23px">
+												<td colspan="3" align="right"><strong>Za
+														plačilo</strong></td>
+												<td align="right"><strong>189,00 €</strong></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>Hvala in lep pozdrav, <br> <strong>Mojster
+											D.O.O.</strong>
+									</td>
+									<td><!-- <a href="#" onclick="window.print();return false;"><img
+											align="right" src="Slike/print-icon.png" height="40px"></a>
+									--> <right><a href="#" class="btn btn-success btn-lg">
+          <span class="glyphicon glyphicon-print"></span> Print 
+        </a></right></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<p align="center">
+					<br> Z vami in za vas že 15 let!<br> Copyright © 2017
+					Mojster D.O.O. Vse pravice pridržane
+				</p>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+</html>

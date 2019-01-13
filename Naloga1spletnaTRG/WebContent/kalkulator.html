@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mojster D.O.O. | Kalkulator</title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<script src="JS/script.js"></script>
+</head>
+<body background="Slike/sayagata-400px.png">
+	<div align="center">
+
+		<div class="uraInDatum">
+			<span id="uraInDatum"></span>
+		</div>
+		<script>
+			window.onload = date_time('uraInDatum');
+		</script>
+		<div class="header-main"></div>
+		<h1 align="center">Mojster D.O.O.</h1>
+		<hr>
+		<h2 class="meni">Meni</h2>
+
+		<div class="kontejner">
+			<div class="kontejner">
+				<a href="index.html" class="buttonMeni"><strong>Prva
+						stran</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="podatki.html" class="buttonMeni"><strong>Podatki
+						o trgovini</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="dodatki.html" class="buttonMeni"><strong>Kategorije
+						izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kolekcija
+						najbolje prodajanih izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="akcijske.html" class="opened"><strong>Akcijske
+						ponudbe</strong></a>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="kontejner-kategorij">
+			<div class="kontejner-kategorij">
+				<a href="akcijske.html" class="buttonMeni-kategorija">Naročniški
+					paketi</a>
+			</div>
+			<div class="kontejner-kategorij">
+				<a href="ugibanje.html" class="buttonMeni-kategorija">Ugibanje
+					števil</a>
+			</div>
+			<div class="kontejner-kategorij">
+				<a href="kalkulator.html" class="opened-kategorija">Kalkulator</a>
+			</div>
+		</div>
+
+		<h2 class="trenutna">Kalkulator</h2>
+
+		<p>Ti kalkulatorji vam bodo v pomoč pri raznoraznih izračunih cen.</p>
+
+		<fieldset class="calc">
+			<legend>Kalkulator za izračun cene z DDV</legend>
+			<label for="cena">Cena</label> <input type="text" id="cena"
+				value="" /> <label for="ddv">DDV</label> <input type="text"
+				id="DDV" value="" /> <input type="button" onclick="ddv()"
+				value="izračunaj" /><br />
+		</fieldset>
+		<fieldset class="calc">
+			<legend>Kalkulator za izračun cene brez DDV</legend>
+			<label for="cena">Cena</label> <input type="text" id="cena1"
+				value="" /> <label for="ddv">DDV</label> <input type="text"
+				id="DDV1" value="" /> <input type="button" onclick="addv()"
+				value="izračunaj" /><br />
+		</fieldset>
+		<fieldset class="calc">
+			<legend>Kalkulator za izračun cene s popustom</legend>
+			<label for="cena">Cena</label> <input type="text" id="cena2"
+				value="" /> <label for="ddv">Popust</label> <input
+				type="text" id="popust" value="" /> <input type="button"
+				onclick="popust()" value="izračunaj" /><br />
+		</fieldset>
+		<fieldset class="calc">
+			<legend>Kalkulator za izračun cene pri nakupu na obroke</legend>
+			<label for="cena">Cena</label> <input type="text" id="cena3"
+				value="" /> <label for="obrok">Obrok</label> <input
+				type="text" id="obrok" value="" /> <input type="button"
+				onclick="obrok()" value="izračunaj" /><br />
+		</fieldset>
+
+		<hr>
+		<p align="center">
+			Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster D.O.O.
+			Vse pravice pridržane
+		</p>
+	</div>
+</body>
+</html>

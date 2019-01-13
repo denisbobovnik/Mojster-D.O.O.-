@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mojster D.O.O. | Dodatki za mobilne naprave</title>
+<!-- <link rel="stylesheet" type="text/css" href="CSS/style.css">-->
+<script src="JS/script.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Mojster D.O.O.!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Prva stran</a></li>
+					<li><a href="podatki.html">Podatki o trgovini</a></li>
+					<li class="dropdown active"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Kategorije izdelkov<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="dodatki.html">Dodatki za
+									mobilne naprave</a></li>
+							<li><a href="#">Mobilni telefoni</a></li>
+							<li><a href="#">Računalniki</a></li>
+							<li><a href="#">Računalniške komponente</a></li>
+						</ul></li>
+					<li><a href="#">Kolekcija najbolje prodajanih izdelkov</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Akcijske ponudbe<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="akcijske.html">Naročniški paketi</a></li>
+							<li><a href="ugibanje.html">Ugibanje števil</a></li>
+							<li><a href="kalkulator.html">Kalkulator</a></li>
+						</ul></li>
+				</ul>
+				<p id="uraInDatum" class="navbar-text navbar-right"
+					style="margin-right: 0px;"></p>
+			</div>
+		</div>
+	</nav>
+	<script>
+		window.onload = date_time('uraInDatum');
+		window.onload = CountDownTimer('akcija');
+	</script>
+	<div class="container-fluid">
+		<div class="row">
+			<div
+				class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 col-md-offset-4">
+				<h2>Dodatki za mobilne naprave</h2>
+
+				<p>Tukaj najdete najrazličnejše dodatke za vaše priljubljene
+					mobilne naprave.</p>
+				<h3>
+					**AKCIJA**<br>-50% na vse dodatke še:
+				</h3>
+				<p id="akcija"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 col-md-offset-3">
+				<table class="table table-bordered">
+					<tr align="center">
+						<td><img src="Slike/mmef2_av1.jpeg" height="300px"></td>
+						<td>
+							<h3 align="center">Apple AirPods</h3>
+							<p align="center">Brezžične. Enostavne. Magične.</p>
+							<p align="center">
+								Brezžične slušalke, narejene <br>za vaš iPhone.
+							</p>
+							<p align="center">Le 189,00 €</p>
+							<p align="center">
+								<a href="airpods.html"><i><strong>Več o tem...</strong></i></a>
+							</p>
+						</td>
+					</tr>
+					<tr align="center">
+						<td><img
+							src="Slike/beats-solo3-wireless-on-ear-headphones---black.jpg"
+							height="200px"></td>
+						<td>
+							<h3 align="center">Beats Solo3 Wireless</h3>
+							<p align="center">Brezžično. Tako kot mora biti.</p>
+							<p align="center">
+								Brezžične slušalke, ustvarjene <br>za profesionalce.
+							</p>
+							<p align="center">Le 299,00 €</p>
+							<p align="center">
+								<a href="beats.html"><i><strong>Več o tem...</strong></i></a>
+							</p>
+						</td>
+					</tr>
+					<tr align="center">
+						<td><img
+							src="Slike/Screen_Shot_2016-09-24_at_12.06.56_PM.0.png"
+							height="220px"></td>
+						<td>
+							<h3 align="center">Snap Spectacles</h3>
+							<p align="center">Le za Snapchat.</p>
+							<p align="center">
+								Pametna očala, ki popolnoma <br>spremenijo izkušnjo
+								Snapchata.
+							</p>
+							<p align="center">Le 123,50 €</p>
+							<p align="center">
+								<a href="spectacles.html"><i><strong>Več o
+											tem...</strong></i></a>
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+
+		<div style="width: 100%; text-align: center;" class="row">
+			<div style="display: inline-block;" class="col-xs-12">
+
+				<a href="XML/seznamProduktov.xml"><button type="button"
+						class="btn">Produkti</button></a> <a href="XML/uporabnik.xml"><button
+						type="button" class="btn">Uporabniki</button></a> <a
+					href="dodajArtikel.html"><button type="button" class="btn">Dodaj
+						artikel</button></a> <a href="racuni.html"><button type="button"
+						class="btn">Računi</button></a>
+
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<p align="center">
+					<br> Z vami in za vas že 15 let!<br> Copyright © 2017
+					Mojster D.O.O. Vse pravice pridržane
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mojster D.O.O. | Začetna stran</title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<script src="JS/script.js"></script>
+</head>
+<body background="Slike/sayagata-400px.png">
+	<div align="center">
+
+		<div class="uraInDatum">
+			<span id="uraInDatum"></span>
+		</div>
+		<script>
+			window.onload = date_time('uraInDatum');
+		</script>
+
+		<div class="header-main"></div>
+		<h1 align="center">Dobrodošli v spletni trgovini Mojster D.O.O.!</h1>
+
+
+
+		<hr>
+
+		<h2 class="meni">Meni</h2>
+
+		<div class="kontejner">
+			<div class="kontejner">
+				<a href="index.html" class="opened"><strong>Prva stran</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="podatki.html" class="buttonMeni"><strong>Podatki
+						o trgovini</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kategorije
+						izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kolekcija
+						najbolje prodajanih izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Akcijske ponudbe</strong></a>
+			</div>
+		</div>
+
+		<table>
+			<tr>
+				<td><img width="80px" height="80px"
+					src="Slike/webstore-300x300.png"></td>
+				<td>
+					<table>
+						<tr>
+							<td>
+								<ul class="slogan-podjetja">
+									<li>Varno</li>
+									<li>Zanesljivo</li>
+									<li>Hitro</li>
+								</ul>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<h2 class="trenutna">Prijava v sistem</h2>
+
+		<b id="opozorilo">Za ogled kategorij izdelkov in izdelkov je
+			potrebna prijava.</b><br> <i>Če še niste registrirani, se <a
+			class="povezava" href="registracija.html">registrirajte</a>.
+		</i> <br> <br>
+		<form name="prijava" action="dodatki.html" method="post"
+			onsubmit="return preveriPrijava()">
+			<table class="obrazec" border="1">
+				<tr>
+					<td>E-naslov:*</td>
+					<td><input class="opacity" type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td>Geslo:*</td>
+					<td><input class="opacity" type="password" name="geslo"></td>
+				</tr>
+			</table>
+
+
+			<input class="button-obrazec" type="submit" value="Prijavi me">
+			<input class="button-obrazec" type="reset" value="Ponastavi">
+		</form>
+
+		<hr>
+		<p align="center">
+			Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster D.O.O.
+			Vse pravice pridržane
+		</p>
+	</div>
+</body>
+</html>

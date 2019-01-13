@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mojster D.O.O. | Podatki o trgovini</title>
+<!-- <link rel="stylesheet" type="text/css" href="CSS/style.css">-->
+<script src="JS/script.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Mojster D.O.O.!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">Prva stran</a></li>
+					<li class="active"><a href="podatki.html">Podatki o
+							trgovini</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Kategorije izdelkov<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Dodatki za mobilne naprave</a></li>
+							<li><a href="#">Mobilni telefoni</a></li>
+							<li><a href="#">Računalniki</a></li>
+							<li><a href="#">Računalniške komponente</a></li>
+						</ul></li>
+					<li><a href="#">Kolekcija najbolje prodajanih izdelkov</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" href="#">Akcijske ponudbe<span
+							class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Naročniški paketi</a></li>
+							<li><a href="#">Ugibanje števil</a></li>
+							<li><a href="#">Kalkulator</a></li>
+						</ul></li>
+				</ul>
+				<p id="uraInDatum" class="navbar-text navbar-right"
+					style="margin-right: 0px;"></p>
+			</div>
+		</div>
+	</nav>
+	<script>
+		window.onload = date_time('uraInDatum');
+		window.onload = initMap();
+	</script>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-md-12 col-lg-12 col-sm-offset-4">
+				<h2 class="trenutna">Podatki o trgovini</h2>
+
+				<p>
+					Podjetje, ustanovljeno leta 2002, je svoje poslovanje pričelo z<br>
+					vzdrževanjem računalniških komponent in operacijskih sistemov. Ob <br>
+					združitvi s podjetji COMTECH in Elektro Jeromel smo naše storitve <br>
+					razširili tudi na razvoj lastnih spletnih in programskih rešitev. <br>
+				<p>
+					<strong>Podatki o podjetju:</strong><br> Mojster D.O.O.<br>
+					Tržaška cesta 22a,<br> 2000 Maribor<br> Slovenija<br>
+					e-mail: <a class="povezava" href="mailto:info@mojsterdoo.si"
+						target="_top">info@mojsterdoo.si</a><br> tel.: 070 399 597
+				</p>
+				<strong>Kje se nahajamo?</strong>
+				<div style="width: 500px; height: 400px;" id="map"></div>
+
+			</div>
+		</div>
+
+
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXIFsFXthMHWqCJn_bsZjIuCaZXfEcCDI&callback=initMap">
+			
+		</script>
+
+
+
+
+
+
+		<br>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<p align="center">
+					Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster
+					D.O.O. Vse pravice pridržane
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

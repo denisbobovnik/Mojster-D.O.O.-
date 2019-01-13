@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="seznamRegistriranihUporabnikov.xslt"?>
+<seznamRegistriranihUporabnikov>
+	<uporabnik id="u1" najProdukt="p1">
+		<idu>1</idu>
+		<ime>Jože</ime>
+		<priimek>Kos</priimek>
+		<spol>M</spol>
+		<enaslov>joze.kos@email.si</enaslov>
+	</uporabnik>
+	<uporabnik id="u2" najProdukt="p2">
+		<idu>2</idu>
+		<ime>Martina</ime>
+		<priimek>Štelcer</priimek>
+		<spol>Ž</spol>
+		<enaslov>mstelcer@outlook.com</enaslov>
+	</uporabnik>
+	<uporabnik id="u3" najProdukt="p2">
+		<idu>3</idu>
+		<ime>Jas</ime>
+		<priimek>Lokić</priimek>
+		<spol>M</spol>
+		<enaslov>lokicjas@hotmail.com</enaslov>
+	</uporabnik>
+	<uporabnik id="u4" najProdukt="p1">
+		<idu>4</idu>
+		<ime>Klara</ime>
+		<priimek>Beklašić</priimek>
+		<spol>Ž</spol>
+		<enaslov>bekla420@windowslive.co.uk</enaslov>
+	</uporabnik>
+	<uporabnik id="u5" najProdukt="p3">
+		<idu>5</idu>
+		<ime>Žan</ime>
+		<priimek>Breznik</priimek>
+		<spol>M</spol>
+		<enaslov>podpora@mojster-doo.si</enaslov>
+	</uporabnik>
+</seznamRegistriranihUporabnikov>

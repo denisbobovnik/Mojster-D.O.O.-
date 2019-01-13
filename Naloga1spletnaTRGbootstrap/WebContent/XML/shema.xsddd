@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="https://www.mojsterdoo.si" xmlns="https://www.mojsterdoo.si"
+	elementFormDefault="qualified">
+	<xs:element name="seznamRegistriranihUporabnikov">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="uporabnik" type="uporabnikType" maxOccurs="unbounded"></xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="uporabnikType">
+		<xs:sequence>
+			<xs:element name="idu" type="xs:string"></xs:element>
+			<xs:element name="ime" type="xs:string"></xs:element>
+			<xs:element name="priimek" type="xs:string"></xs:element>
+			<xs:element name="spol" type="xs:string"></xs:element>
+			<xs:element name="enaslov" type="xs:string"></xs:element>
+		</xs:sequence>
+		<xs:attribute name="id" type="xs:string"></xs:attribute>
+		<xs:attribute name="najProdukt" type="xs:string"></xs:attribute>
+	</xs:complexType>
+</xs:schema>
+
+
+
+stara

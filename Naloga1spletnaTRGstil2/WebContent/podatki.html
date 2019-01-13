@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mojster D.O.O. | Podatki o trgovini</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+
+		<div id="sitename">
+			<h1>Mojster D.O.O.</h1>
+			<h2>Meni</h2>
+		</div>
+
+		<div id="mainmenu">
+			<ul>
+				<li><a href="index.html">Prva stran</a></li>
+				<li><a class="current" href="podatki.html">Podatki o trgovini</a></li>
+				<li><a href="#">Kategorije izdelkov</a></li>
+				<li><a href="#">Kolekcija najbolje prodajanih izdelkov</a></li>
+				<li><a href="#">Akcijske ponudbe</a></li>
+			</ul>
+		</div>
+
+		<div id="wrap">
+
+			<div id="leftside">
+				<p>
+					<a class="nav" href="">Prazno</a><span class="hide">
+						| </span> <a class="nav" href="">Prazno</a><span class="hide"> | </span>
+					<a class="nav" href="">Prazno</a><span class="hide"> | </span> <a
+						class="nav" href="">Prazno</a><span class="hide"> | </span>
+					<!--<a class="nav active" href="">O nas</a><span class="hide"> | </span>
+<a class="nav" href="">Novice</a><span class="hide"> | </span>
+<a class="nav" href="">Kontakti</a><span class="hide"> | </span>
+<a class="nav" href="">Sponzorji</a><span class="hide"> | </span>
+<a class="nav sub" href="">Sponsor</a><span class="hide"> | </span>
+<a class="nav sub" href="">Sponsor</a><span class="hide"> | </span>
+<a class="nav sub" href="">Sponsor</a>-->
+				</p>
+
+				<h1>Povezave:</h1>
+				<ul class="linklist">
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+
+				</ul>
+			</div>
+
+			<div id="rightside">
+
+				<h1>Zadnje novice</h1>
+				<p>
+					<strong>Mar 14: </strong> Če sodite med tiste, ki za računalnikom
+					preživijo veliko časa, je pomembno, da ste med tem osredotočeni
+					tudi na pravilno in globoko dihanje, kajti hitro in plitvo ima
+					lahko neprijetne posledice.
+				</p>
+				<p>
+					<strong>Mar 2: </strong> Prva dama ZDA, Sevničanka Melania Trump,
+					vedno znova navduši modne poznavalce. Tokrat se je v kongresu
+					pojavila v kreaciji Michaela Korsa, ki naj bi stala skoraj 10 tisoč
+					dolarjev.
+				</p>
+
+				<h1>Zadnja slika</h1>
+				<a href=""><img src="img/colors.jpg" height="104" width="125"
+					class="thumbnail" /></a>
+
+				<h1>Iskanje</h1>
+				<p class="searchform">
+					<input type="text" alt="Search" class="searchbox" /> <input
+						type="submit" value="Isči!" class="searchbutton" />
+				</p>
+
+			</div>
+
+			<div id="content">
+				<h1>Podatki o trgovini</h1>
+
+		<p>
+			Podjetje, ustanovljeno leta 2002, je svoje poslovanje pričelo z<br>
+			vzdrževanjem računalniških komponent in operacijskih sistemov. Ob <br>
+			združitvi s podjetji COMTECH in Elektro Jeromel smo naše storitve <br>
+			razširili tudi na razvoj lastnih spletnih in programskih rešitev. <br>
+		<p>
+			<strong>Podatki o podjetju:</strong><br> Mojster D.O.O.<br>
+			Tržaška cesta 22a,<br> 2000 Maribor<br> Slovenija<br>
+			e-mail: <a href="mailto:info@mojsterdoo.si" target="_top">info@mojsterdoo.si</a><br>
+			tel.: 070 399 597
+		</p>
+
+<strong>Kje se nahajamo?</strong>
+		<div id="map"></div>
+		<script>
+			function initMap() {
+				var uluru = {
+					lat : 46.529193,
+					lng : 15.646286
+				};
+				var map = new google.maps.Map(document.getElementById('map'), { //očitno lahko getbyid maš tut za div
+					zoom : 14,
+					center : uluru
+				});
+				var marker = new google.maps.Marker({
+					position : uluru,
+					map : map
+				});
+			}
+		</script>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXIFsFXthMHWqCJn_bsZjIuCaZXfEcCDI&callback=initMap">
+			
+		</script>
+
+			</div>
+			<div class="clearingdiv">&nbsp;</div>
+		</div>
+	</div>
+	<div id="footer">
+		Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster D.O.O.
+		Vse pravice pridržane
+	</div>
+	<!-- Designed by DreamTemplate. Please leave link unmodified. -->
+	<center>
+		<a href="http://www.dreamtemplate.com" title="Website Templates"
+			target="_blank">Website templates</a>
+	</center>
+</body>
+</html>

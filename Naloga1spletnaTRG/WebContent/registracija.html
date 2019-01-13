@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mojster D.O.O. | Registracija</title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<script src="JS/script.js"></script>
+</head>
+<body background="Slike/sayagata-400px.png">
+	<div align="center">
+
+		<div class="uraInDatum">
+			<span id="uraInDatum"></span>
+		</div>
+		<script>
+			window.onload = date_time('uraInDatum');
+		</script>
+
+		<div class="header-main"></div>
+		<h1 align="center">Mojster D.O.O.</h1>
+		<hr>
+
+		<h2 class="meni">Meni</h2>
+
+		<div class="kontejner">
+			<div class="kontejner">
+				<a href="index.html" class="buttonMeni"><strong>Prva
+						stran</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="podatki.html" class="buttonMeni"><strong>Podatki
+						o trgovini</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kategorije
+						izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kolekcija
+						najbolje prodajanih izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Akcijske ponudbe</strong></a>
+			</div>
+		</div>
+
+		<h2 class="trenutna">Registracija</h2>
+
+		<form action="dodatki.html" method="post" name="registracija"
+			onsubmit="return preveriRegistracija()">
+			<table border="1" class="obrazec">
+				<tr>
+					<td>Ime:*</td>
+					<td><input class="opacity" type="text" name="ime"></td>
+				</tr>
+				<tr>
+					<td>Priimek:*</td>
+					<td><input class="opacity" type="text" name="priimek"></td>
+				</tr>
+				<tr>
+					<td>Spol:</td>
+					<td><input class="opacity" type="radio" name="spol">M<input
+						type="radio" name="spol">Ž</td>
+				</tr>
+				<tr>
+					<td>E-naslov:*</td>
+					<td><input class="opacity" type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td>Geslo:*</td>
+					<td><input class="opacity" type="password" name="geslo"></td>
+				</tr>
+				<tr>
+					<td>Splošni pogoji:*</td>
+					<td><input class="opacity" type="radio" name="pogoji">Strinjam
+						se s pogoji</td>
+				</tr>
+			</table>
+			<input class="button-obrazec" type="submit" name="register"
+				value="Registriraj me"> <input class="button-obrazec"
+				type="reset" name="reset" value="Ponastavi">
+		</form>
+
+		<hr>
+		<p align="center">
+			Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster D.O.O.
+			Vse pravice pridržane
+		</p>
+	</div>
+</body>
+</html>

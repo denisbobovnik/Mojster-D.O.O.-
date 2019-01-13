@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mojster D.O.O. | Dodaj artikel</title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<script src="JS/script.js"></script>
+</head>
+<body background="Slike/sayagata-400px.png">
+	<div align="center">
+
+		<div class="uraInDatum">
+			<span id="uraInDatum"></span>
+		</div>
+		<script>
+			window.onload = date_time('uraInDatum');
+		</script>
+		<div class="header-main"></div>
+		<h1 align="center">Mojster D.O.O.</h1>
+		<hr>
+		<h2 class="meni">Meni</h2>
+
+		<div class="kontejner">
+			<div class="kontejner">
+				<a href="index.html" class="buttonMeni"><strong>Prva
+						stran</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="podatki.html" class="buttonMeni"><strong>Podatki
+						o trgovini</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="dodatki.html" class="opened"><strong>Kategorije
+						izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kolekcija
+						najbolje prodajanih izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="akcijske.html" class="buttonMeni"><strong>Akcijske
+						ponudbe</strong></a>
+			</div>
+		</div>
+
+		<h2 class="trenutna">Dodaj artikel</h2>
+		<form name="dodaj" action="dodatki.html" method="post"
+			onsubmit="return dodajArtikel()">
+			<table border="1" class="obrazec">
+				<tr>
+					<td>Naziv:*</td>
+					<td><input class="opacity" type="text" name="naziv"></td>
+				</tr>
+				<tr>
+					<td>Slogan:</td>
+					<td><input class="opacity" type="text" name="slogan"></td>
+				</tr>
+				<tr>
+					<td>Kratek opis:*</td>
+					<td><input class="opacity" type="text" name="kratek-opis"></td>
+				</tr>
+				<tr>
+					<td>Opis:*</td>
+					<td><textarea class="opacity" rows="6" cols="40" id="TITLE"
+							name="opis"></textarea></td>
+				</tr>
+				<tr>
+					<td>Cena:*</td>
+					<td><input class="opacity" type="text" name="cena"></td>
+				</tr>
+				<tr>
+					<td>Kategorija:*</td>
+					<td><select id="opacity" name="kategorija">
+							<option disabled selected value="neveljavna">-- izberite
+								kategorijo --</option>
+							<option value="Dodatki za mobilne naprave">Dodatki za
+								mobilne naprave</option>
+							<option value="Mobilni telefoni">Mobilni telefoni</option>
+							<option value="Računalniki">Računalniki</option>
+							<option value="Računalniške komponente">Računalniške
+								komponente</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td>Zaloga:*</td>
+					<td><input class="opacity" type="radio" value="Da"
+						name="zaloga">Da <input type="radio" value="Ne"
+						name="zaloga">Ne</td>
+				</tr>
+			</table>
+			<input class="button-obrazec" type="submit" value="Dodaj"> <input
+				class="button-obrazec" type="reset" value="Ponastavi">
+		</form>
+
+		<hr>
+		<p align="center">
+			Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster D.O.O.
+			Vse pravice pridržane
+		</p>
+	</div>
+</body>
+</html>

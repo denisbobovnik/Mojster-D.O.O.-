@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mojster D.O.O. | Podatki o trgovini</title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<script src="JS/script.js"></script>
+</head>
+<body background="Slike/sayagata-400px.png">
+	<div align="center">
+
+		<div class="uraInDatum">
+			<span id="uraInDatum"></span>
+		</div>
+		<script>
+			window.onload = date_time('uraInDatum');
+			window.onload = initMap();
+		</script>
+
+		<div class="header-main"></div>
+		<h1 align="center">Mojster D.O.O.</h1>
+
+		<hr>
+
+		<h2 class="meni">Meni</h2>
+
+		<div class="kontejner">
+			<div class="kontejner">
+				<a href="index.html" class="buttonMeni"><strong>Prva
+						stran</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="podatki.html" class="opened"><strong>Podatki o
+						trgovini</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kategorije
+						izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kolekcija
+						najbolje prodajanih izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Akcijske ponudbe</strong></a>
+			</div>
+		</div>
+
+		<h2 class="trenutna">Podatki o trgovini</h2>
+
+		<p>
+			Podjetje, ustanovljeno leta 2002, je svoje poslovanje pričelo z<br>
+			vzdrževanjem računalniških komponent in operacijskih sistemov. Ob <br>
+			združitvi s podjetji COMTECH in Elektro Jeromel smo naše storitve <br>
+			razširili tudi na razvoj lastnih spletnih in programskih rešitev. <br>
+		<p>
+			<strong>Podatki o podjetju:</strong><br> Mojster D.O.O.<br>
+			Tržaška cesta 22a,<br> 2000 Maribor<br> Slovenija<br>
+			e-mail: <a class="povezava" href="mailto:info@mojsterdoo.si"
+				target="_top">info@mojsterdoo.si</a><br> tel.: 070 399 597
+		</p>
+		<strong>Kje se nahajamo?</strong>
+		<div id="map"></div>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXIFsFXthMHWqCJn_bsZjIuCaZXfEcCDI&callback=initMap">
+			
+		</script>
+		<hr>
+		<p align="center">
+			Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster D.O.O.
+			Vse pravice pridržane
+		</p>
+	</div>
+</body>
+</html>

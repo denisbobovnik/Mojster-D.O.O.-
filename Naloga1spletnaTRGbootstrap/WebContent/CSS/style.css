@@ -1,0 +1,374 @@
+@CHARSET "UTF-8";
+
+body {
+	font-family: Trebuchet MS;
+}
+
+table.podrobno {
+	background-color: white;
+	width: 850px;
+	border: 1px solid black;
+	margin-top: 2px;
+}
+
+#airpods-glavna-slika {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+p.slogan {
+	color: gray;
+}
+
+iframe {
+	border: none;
+}
+
+#beats-glavna-slika {
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+table.obrazec {
+	background-color: white;
+	border: 1px solid black;
+	opacity: 0.5;
+	margin-bottom: 8px;
+}
+
+table.obrazec:hover {
+	opacity: 1.0;
+}
+
+textarea {
+	resize: none;
+}
+
+#podPodMeni-dodatki {
+	width: 100%;
+	margin: auto;
+}
+
+#ime-kategorije {
+	width: 61%;
+	float: left;
+}
+
+#dodajArtikel-racun {
+	width: 39%;
+	float: left;
+}
+
+#dodajArtikel-racun-text {
+	margin-left: 100px;
+}
+
+table.seznam-artiklov {
+	background-color: white;
+	width: 800px;
+	border: 1px solid black;
+	margin-bottom: 8px;
+}
+
+table.racun {
+	background-color: white;
+	width: 800px;
+	border: 1px solid black;
+}
+
+#opozorilo {
+	color: red;
+}
+
+#map {
+	width: 500px;
+	height: 400px;
+}
+
+div.racun-header-container {
+	width: 100%;
+	margin: auto;
+}
+
+div.racun-header-mojster {
+	float: left;
+}
+
+div.racun-header-logo-slogan {
+	float: left;
+	margin-left: 20px;
+}
+
+table.racun-podatki-narocnika-ostalo {
+	width: 400px;
+	height: 150px;
+}
+
+.racun-podatki-narocnika-ostalo-title {
+	/*če ne defirinaš značke, dojema vse s tem classom*/
+	background-color: #D9E5EE;
+}
+
+.racun-podatki-narocnika-ostalo-vsebina {
+	/*če ne defirinaš značke, dojema vse s tem classom*/
+	background-color: #F8F7F5;
+}
+
+@media print {
+	.noprint {
+		display: none;
+	}
+}
+
+table.racun-naroceni-izdelki {
+	width: 100%;
+	height: 130px;
+}
+
+@media screen {
+	...
+}
+
+h2.meni {
+	color: #666666;
+}
+
+input.opacity {
+	opacity: 0.5;
+}
+
+input.opacity:hover {
+	opacity: 1.0;
+}
+
+h2.trenutna {
+	padding-bottom: 10px;
+	//
+	paddinge
+	še
+	nastavit
+	povsot
+}
+
+div.kontejner {
+	display: inline-block;
+}
+
+div.kontejner-kategorij {
+	display: inline-block;
+	margin-top: 3px;
+	margin-bottom: 2px;
+}
+
+ul.slogan-podjetja {
+	list-style-image: url('../Slike/checkmark.png'); //
+	list-style-type: square-- za kvadrat namesto pike, ampak bolš kr
+		checkmark, obstajajo: disc, circle, square obstajajo
+}
+
+a.povezava:link {
+	color: red;
+}
+
+a.povezava:visited {
+	color: black;
+}
+
+a.povezava:hover {
+	color: blue;
+}
+
+a.povezava:active {
+	color: green;
+}
+
+a.buttonMeni {
+	background-color: #e6e6e6;
+	border: 1px solid black;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.3s; /* Safari */
+	transition-duration: 0.3s;
+	outline: none;
+}
+
+a.buttonMeni:link {
+	color: black;
+}
+
+a.buttonMeni:visited {
+	color: black;
+}
+
+a.buttonMeni:hover {
+	background-color: #bfbfbf;
+	color: white;
+}
+
+a.buttonMeni:active {
+	background-color: #808080;
+}
+
+a.opened {
+	background-color: #bfbfbf;
+	color: white;
+	border: 1px solid black;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.3s; /* Safari */
+	transition-duration: 0.3s;
+	outline: none;
+}
+
+a.opened:link {
+	color: white;
+}
+
+a.opened:visited {
+	color: white;
+}
+
+a.opened:active {
+	background-color: #808080;
+}
+
+a.buttonMeni-kategorija {
+	background-color: #e6e6e6;
+	border: 1px solid black;
+	padding: 3px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.3s; /* Safari */
+	transition-duration: 0.3s;
+	outline: none;
+}
+
+a.buttonMeni-kategorija:link {
+	color: black;
+}
+
+a.buttonMeni-kategorija:visited {
+	color: black;
+}
+
+a.buttonMeni-kategorija:hover {
+	background-color: #bfbfbf;
+	color: white;
+}
+
+a.buttonMeni-kategorija:active {
+	background-color: #808080;
+}
+
+a.opened-kategorija {
+	background-color: #bfbfbf;
+	color: white;
+	border: 1px solid black;
+	padding: 3px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.3s; /* Safari */
+	transition-duration: 0.3s;
+	outline: none;
+}
+
+a.opened-kategorija:link {
+	color: white;
+}
+
+a.opened-kategorija:visited {
+	color: white;
+}
+
+a.opened-kategorija:active {
+	background-color: #808080;
+}
+
+.button-obrazec {
+	background-color: #e6e6e6;
+	border: 1px solid black;
+	padding: 3px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+	outline: none; //
+	-webkit-transition-duration: 0.3s; /* Safari */
+	TUDI
+	NE
+	DELA
+	//transition-duration
+	:
+	0.3s;
+	TUDI
+	NE
+	DELA
+}
+
+div.uraInDatum {
+	text-align: right;
+}
+
+#bonitete {
+	opacity: 0.5;
+}
+
+#bonitete:hover {
+	opacity: 1.0;
+}
+
+#opacity {
+	opacity: 0.5;
+}
+
+#opacity:hover {
+	opacity: 1.0;
+}
+
+fieldset.calc {
+	border: 0;
+}
+
+table.seznam {
+	background-color: white;
+	border: 1px solid black;
+	margin-bottom: 8px;
+}
+
+tr.seznam-header {
+	background-color: #bfbfbf;
+}
+
+/* NAJ NE BI DELALO, KER NE GRE ZA A ELEMENT, AMPAK ZA SUBMIT BUTTON V FORM-U
+a.button-obrazec:link {
+	color: black;
+}
+
+a.button-obrazec:visited {
+	color: black;
+}
+
+a.button-obrazec:hover {
+	background-color: #bfbfbf;
+	color: white;
+}
+
+a.button-obrazec:active {
+	background-color: #808080;
+}
+*/

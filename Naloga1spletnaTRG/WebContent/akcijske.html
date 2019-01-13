@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Mojster D.O.O. | Akcijske ponudbe</title>
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<script src="JS/script.js"></script>
+</head>
+<body background="Slike/sayagata-400px.png">
+	<div align="center">
+
+		<div class="uraInDatum">
+			<span id="uraInDatum"></span>
+		</div>
+		<script>
+			window.onload = date_time('uraInDatum');
+		</script>
+		<div class="header-main"></div>
+		<h1 align="center">Mojster D.O.O.</h1>
+		<hr>
+		<h2 class="meni">Meni</h2>
+
+		<div class="kontejner">
+			<div class="kontejner">
+				<a href="index.html" class="buttonMeni"><strong>Prva
+						stran</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="podatki.html" class="buttonMeni"><strong>Podatki
+						o trgovini</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="dodatki.html" class="buttonMeni"><strong>Kategorije
+						izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="#" class="buttonMeni"><strong>Kolekcija
+						najbolje prodajanih izdelkov</strong></a>
+			</div>
+			<div class="kontejner">
+				<a href="akcijske.html" class="opened"><strong>Akcijske
+						ponudbe</strong></a>
+			</div>
+		</div>
+
+		<br>
+
+		<div class="kontejner-kategorij">
+			<div class="kontejner-kategorij">
+				<a href="akcijske.html" class="opened-kategorija">Naročniški
+					paketi</a>
+			</div>
+			<div class="kontejner-kategorij">
+				<a href="ugibanje.html" class="buttonMeni-kategorija">Ugibanje
+					števil</a>
+			</div>
+			<div class="kontejner-kategorij">
+				<a href="kalkulator.html" class="buttonMeni-kategorija">Kalkulator</a>
+			</div>
+		</div>
+
+		<h2 class="trenutna">Naročniški paketi</h2>
+
+		<p>
+			Ta obrazec vam glede na izbran naročniški paket izračuna <br>članarino
+			za prejem bonitet v spletni trgovini Mojster D.O.O.
+		</p>
+
+		<form id="paketi" name="paketi" action="#" method="post" onsubmit="">
+			<table border="1" class="obrazec">
+				<tr>
+					<td>Paket:*</td>
+					<td><select id="bonitete" name="paket">
+							<option disabled selected value="neveljavna">-- izberite
+								paket --</option>
+							<option value="dodatki">Osnovni</option>
+							<option value="mobilni">Naprednejši</option>
+							<option value="racunalniki">Mojstrski</option>
+					</select></td>
+				</tr>
+			</table>
+			<p id="clanarina"></p>
+			<input class="button-obrazec" type="submit" value="Izračunaj"
+				onclick="vrniClanarino(); return false;"> <input
+				class="button-obrazec" type="reset" value="Ponastavi"
+				onclick="pobrisiObrazec(); return false;">
+		</form>
+
+		<hr>
+		<p align="center">
+			Z vami in za vas že 15 let!<br> Copyright © 2017 Mojster D.O.O.
+			Vse pravice pridržane
+		</p>
+	</div>
+</body>
+</html>
